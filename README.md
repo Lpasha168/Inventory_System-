@@ -10,6 +10,7 @@
 | last_update | DATETIME | Время обновления |
 ***
 **Документация API:**
+
 GET /inventory: получить список товаров
 
 POST /inventory: добавить товар
