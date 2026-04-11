@@ -136,7 +136,7 @@ void MainWindow::onDataReceived(QString data)
     qDebug() << "Low stock:" << lowStockCount;
 }
 
-// ================== ACTIONS ==================
+
 
 void MainWindow::onAdd()
 {
