@@ -53,7 +53,7 @@ void Server::start(int port) {
     res.set_content(arr.dump(), "application/json");
 });
 
-    // ---------------- POST ----------------
+    
     svr.Post("/inventory", [&](const httplib::Request& req, httplib::Response& res) {
 
         Logger::log("POST /inventory");
@@ -84,7 +84,7 @@ void Server::start(int port) {
         }
     });
 
-    // ---------------- DELETE ----------------
+    
     svr.Delete(R"(/inventory/(\d+))", [&](const httplib::Request& req, httplib::Response& res) {
 
         int id = std::stoi(req.matches[1]);
@@ -97,7 +97,7 @@ void Server::start(int port) {
         }
     });
 
-    // ---------------- RESTOCK ----------------
+    
     svr.Post(R"(/inventory/(\d+)/restock)", [&](const httplib::Request& req, httplib::Response& res) {
 
         int id = std::stoi(req.matches[1]);
@@ -110,7 +110,7 @@ void Server::start(int port) {
         res.set_content("OK", "text/plain");
     });
 
-    // ---------------- SELL ----------------
+    
     svr.Post(R"(/inventory/(\d+)/sell)", [&](const httplib::Request& req, httplib::Response& res) {
 
         int id = std::stoi(req.matches[1]);
