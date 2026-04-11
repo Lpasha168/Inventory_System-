@@ -10,7 +10,7 @@ public:
         std::time_t now = std::time(nullptr);
 
         char* dt = std::ctime(&now);
-        dt[strlen(dt) - 1] = '\0'; // убрать \n
+        dt[strlen(dt) - 1] = '\0'; 
 
         std::cout << "[" << dt << "] " << message << std::endl;
     }
