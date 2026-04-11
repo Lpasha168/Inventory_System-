@@ -24,7 +24,7 @@ GET /inventory: получить список товаров
 
 POST /inventory: добавить товар
 
-DELETE /inventoey: удалить товар
+DELETE /inventory: удалить товар
 
 POST /inventory/{id}/sell: уменьшить количество 
 ***
