@@ -18,4 +18,17 @@ POST /inventory: добавить товар
 DELETE /inventoey: удалить товар
 
 POST /inventory/{id}/sell: уменьшить количество 
+***
+**Запуск**
+В ***корневой*** папке проекта запустить командую строку и вставить по очереди команды:
+
+`mkdir build`
+
+`cd build`
+
+`cmake ..`
+
+`cmake --build .`
+
+После этого **server.exe** должен появиться в папке `Inventory_System\build\server\Debug`. Запускаем его
 
