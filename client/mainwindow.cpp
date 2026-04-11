@@ -17,23 +17,23 @@ MainWindow::MainWindow(QWidget *parent)
 {
     setupUI();
 
-    // получаем данные
+    
     connect(&api, &ApiClient::inventoryReceived,
             this, &MainWindow::onDataReceived);
 
-    // автообновление после любых изменений
+    
     connect(&api, &ApiClient::changed,
             this, [=]() {
                 api.getInventory();
             });
 
-    // ошибки API
+    
     connect(&api, &ApiClient::errorOccurred,
             this, [=](const QString& err) {
                 QMessageBox::critical(this, "API Error", err);
             });
 
-    // первый запуск
+    
     api.getInventory();
 }
 
