@@ -11,6 +11,10 @@
 ***
 **Документация API:**
 GET /inventory: получить список товаров
+
 POST /inventory: добавить товар
+
 DELETE /inventoey: удалить товар
+
 POST /inventory/{id}/sell: уменьшить количество 
+
