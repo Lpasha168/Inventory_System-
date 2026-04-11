@@ -1,4 +1,4 @@
-# Inventory_System-
+# Inventory_System
 **Визуал В QT:**
 1) Таблица товаров
 2) Добавление товара
